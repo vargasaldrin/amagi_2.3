@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>POST Form Data</h1>
+        
+        <form id="userForm">
+            <label for="input_firstName">First Name:</label>
+            <input type="text" name="input_firstName" id="input_firstName" /></br>
+            
+            <label for="input_lastName">Last Name:</label>
+            <input type="text" name="input_lastName" id="input_lastName" /></br>
+            
+            <label for="input_email">Email:</label>
+            <input type="text" name="input_email" id="input_email" /></br>
+
+            <fieldset>
+                <legend>Sample One</legend>
+                <input type="radio" name="sample_one" id="one" value="one"/>
+                <label for="one">One</label></br>
+                <input type="radio" name="sample_one" id="two" value="two"/>
+                <label for="two">Two</label></br>
+                <input type="radio" name="sample_one" id="three" value="three"/>
+                <label for="three">Three</label></br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sample Two</legend>
+                <input type="radio" name="sample_two" id="four" value="four"/>
+                <label for="four">Four</label></br>
+                <input type="radio" name="sample_two" id="five" value="five"/>
+                <label for="five">Five</label></br>
+                <input type="radio" name="sample_two" id="six" value="six"/>
+                <label for="six">Six</label></br>
+            </fieldset>
+            
+            <label for="input_comment">User Input:</label>
+            <textarea name="input_user" id="input_comment"></textarea></br>
+
+            <input type="submit" value="Submit" />
+        </form>
+        <div id="message" style="opacity: 0;">See console.log for the copy of the POST data</div>
+        <script src="index.js"></script>
+</body>
+</html>
